@@ -521,6 +521,52 @@ function setCurrentYear() {
   setText("#current-year", new Date().getFullYear().toString());
 }
 
+function setupMobileMenu() {
+  const toggleButton = document.querySelector("[data-menu-toggle]");
+  const menu = document.querySelector("[data-menu]");
+
+  if (!toggleButton || !menu) {
+    return;
+  }
+
+  const desktopMediaQuery = window.matchMedia("(min-width: 640px)");
+  const menuLinks = menu.querySelectorAll("a");
+
+  function setMenuState(isOpen) {
+    toggleButton.setAttribute("aria-expanded", String(isOpen));
+    toggleButton.setAttribute(
+      "aria-label",
+      isOpen ? "Fechar menu principal" : "Abrir menu principal"
+    );
+    menu.classList.toggle("is-open", isOpen);
+  }
+
+  toggleButton.addEventListener("click", () => {
+    const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+    setMenuState(!isExpanded);
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!desktopMediaQuery.matches) {
+        setMenuState(false);
+      }
+    });
+  });
+
+  desktopMediaQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+      setMenuState(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuState(false);
+    }
+  });
+}
+
 function initializePortfolio() {
   renderHero();
   renderTimeline();
@@ -530,6 +576,7 @@ function initializePortfolio() {
   renderValueProps();
   renderContacts();
   setCurrentYear();
+  setupMobileMenu();
   setupReveal();
 }
 

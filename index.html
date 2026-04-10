@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portfólio de Abilio Ferraz, desenvolvedor front-end em formação com foco em interfaces modernas, responsivas e performáticas."
+  >
+  <title>Abilio Ferraz | Front-End Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#topo" aria-label="Ir para o topo da página">
+        <span class="brand__chip">Player 01</span>
+        <span class="brand__name">Abilio Ferraz</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#jornada">Jornada</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#quest-log">Quest Log</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a
+        class="button button--ghost"
+        href="https://github.com/abilioferraz"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Ver GitHub
+      </a>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <div class="hero__content" data-reveal>
+          <p class="section-kicker">Front-End Portfolio</p>
+          <h1 id="hero-title"></h1>
+          <p class="hero__summary" id="hero-summary"></p>
+
+          <div class="hero__actions" id="hero-actions" aria-label="Ações principais"></div>
+
+          <ul class="hero__metrics" id="hero-metrics" aria-label="Indicadores principais"></ul>
+        </div>
+
+        <aside class="hero__panel board-card" aria-label="Resumo profissional" data-reveal>
+          <div class="player-card">
+            <img
+              class="player-card__avatar"
+              id="profile-avatar"
+              src=""
+              alt="Foto de perfil de Abilio Ferraz"
+              width="128"
+              height="128"
+              loading="eager"
+            >
+
+            <div class="player-card__body">
+              <p class="panel-label">Painel do jogador</p>
+              <h2 id="profile-name"></h2>
+              <p id="profile-role"></p>
+            </div>
+          </div>
+
+          <ul class="status-list" id="status-tags" aria-label="Etiquetas profissionais"></ul>
+
+          <dl class="profile-facts">
+            <div>
+              <dt>Base atual</dt>
+              <dd id="profile-location"></dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd id="profile-availability"></dd>
+            </div>
+            <div>
+              <dt>Foco</dt>
+              <dd id="profile-focus"></dd>
+            </div>
+          </dl>
+
+          <div class="signal-panel">
+            <p class="panel-label">Build highlights</p>
+            <ul id="highlight-list" aria-label="Destaques de construção"></ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="jornada">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Mapa da jornada</p>
+          <h2>Uma progressão clara entre estudo, prática e construção de portfólio</h2>
+          <p>
+            A página foi estruturada para mostrar evolução contínua, domínio técnico em crescimento
+            e capacidade real de transformar estudo em entrega.
+          </p>
+        </div>
+
+        <div class="timeline" id="timeline-list" aria-label="Linha do tempo profissional"></div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Projetos em destaque</p>
+          <h2>Cases que ajudam a contar sua história com objetividade</h2>
+          <p>
+            Cada card foi pensado para unir contexto, stack e propósito, deixando claro o que você
+            já construiu e como está evoluindo.
+          </p>
+        </div>
+
+        <div class="project-grid" id="project-grid" aria-label="Projetos em destaque"></div>
+      </section>
+
+      <section class="section section--split" id="stack">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Inventário técnico</p>
+          <h2>Ferramentas, fundamentos e práticas que sustentam a base do portfólio</h2>
+          <p>
+            A leitura aqui é rápida para recrutadores e direta para clientes: tecnologia, contexto e
+            profundidade em um só lugar.
+          </p>
+        </div>
+
+        <div class="stack-board board-card" data-reveal>
+          <div class="stack-grid" id="stack-grid" aria-label="Stack principal"></div>
+        </div>
+      </section>
+
+      <section class="section section--split" id="quest-log">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Quest log</p>
+          <h2>Próximas fases que reforçam consistência, leitura de produto e maturidade técnica</h2>
+          <p>
+            Esse bloco comunica ambição com direção. Em vez de parecer iniciante, você parece alguém
+            com plano, critério e disciplina.
+          </p>
+        </div>
+
+        <div class="quest-grid" id="quest-grid" aria-label="Objetivos atuais"></div>
+      </section>
+
+      <section class="section" aria-labelledby="value-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Como eu agrego</p>
+          <h2 id="value-title">Uma proposta de valor pensada para oportunidades reais</h2>
+          <p>
+            A combinação de clareza visual, organização e evolução constante transforma um portfólio
+            bonito em argumento profissional.
+          </p>
+        </div>
+
+        <div class="value-grid" id="value-grid" aria-label="Pontos fortes profissionais"></div>
+      </section>
+
+      <section class="cta-section board-card" id="contato" data-reveal>
+        <div class="cta-copy">
+          <p class="section-kicker">Checkpoint final</p>
+          <h2>Disponível para novos projetos, freelas e oportunidades front-end</h2>
+          <p>
+            Use este espaço para centralizar sua apresentação profissional e facilitar o próximo
+            passo de quem quiser falar com você.
+          </p>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-list" id="contact-list" aria-label="Canais de contato"></div>
+          <div class="cta-actions" id="cta-actions" aria-label="Ações de contato"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Construído com HTML, CSS e JavaScript puro para máxima leveza e manutenção simples.</p>
+      <p>&copy; <span id="current-year"></span> Abilio Ferraz. Todos os checkpoints reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>

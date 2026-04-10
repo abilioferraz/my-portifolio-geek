@@ -711,6 +711,7 @@ button {
 .site-footer p {
   margin: 0;
   font-size: 0.95rem;
+  text-align: center;
 }
 
 [data-reveal] {

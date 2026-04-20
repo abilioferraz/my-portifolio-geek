@@ -38,7 +38,7 @@ const portfolioConfig = {
       },
       {
         label: "Enviar WhatsApp",
-        href: "https://wa.me/5511999143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto",
+        href: "https://wa.me/5511966143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto",
         variant: "primary",
         external: true
       },

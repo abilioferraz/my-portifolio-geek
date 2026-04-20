@@ -102,27 +102,83 @@ const portfolioConfig = {
   projects: [
     {
       status: "Web Application",
-      title: "DETONA RALPH",
+      title: "my-portifolio-geek",
       description:
-        "Aplicação interativa com lógica de jogo, otimizada para performance e responsividade. Demonstra manipulação avançada de DOM e interações dinâmicas.",
+        "Portfólio profissional com design moderno e identidade visual única. Demonstra expertise em arquitetura frontend e otimização de performance.",
+      tags: ["JavaScript", "Responsive", "Portfolio"],
+      href: "https://github.com/abilioferraz/my-portifolio-geek"
+    },
+    {
+      status: "Projeto",
+      title: "Projeto_04_pet",
+      description:
+        "Aplicação para gerenciamento de pets com interface intuitiva e funcionalidades robustas. Exemplifica padrões de desenvolvimento moderno.",
       tags: ["HTML5", "CSS3", "JavaScript"],
-      href: "https://github.com/abilioferraz/DETONA-RALPH"
+      href: "https://github.com/abilioferraz/Projeto_04_pet"
     },
     {
       status: "Landing Page",
-      title: "Trilha CSS Desafio 01",
+      title: "Projeto_03_portifolionexo",
       description:
-        "Página responsiva com foco em semântica, acessibilidade e performance. Layout fluido que se adapta a todos os breakpoints sem compromissos visuais.",
-      tags: ["HTML5", "CSS3", "Responsivo"],
-      href: "https://github.com/abilioferraz/trilha-css-desafio-01"
+        "Página responsiva com foco em design semântico e acessibilidade. Demonstra domínio de CSS avançado e componentização visual.",
+      tags: ["HTML", "CSS3", "Responsive"],
+      href: "https://github.com/abilioferraz/Projeto_03_portifolionexo"
+    },
+    {
+      status: "Web Application",
+      title: "AluraBook SiteResponsivo",
+      description:
+        "Site responsivo com layout dinâmico e navegação intuitiva. Implementação completa de boas práticas de desenvolvimento web.",
+      tags: ["HTML5", "CSS3", "JavaScript"],
+      href: "https://github.com/abilioferraz/AluraBook__SiteResponsivo"
+    },
+    {
+      status: "Landing Page",
+      title: "Projeto_01_aluraplus",
+      description:
+        "Landing page para streaming com design elegante e UX otimizada. Demonstra entendimento de padrões de conversão e copywriting.",
+      tags: ["HTML5", "CSS3", "Design"],
+      href: "https://github.com/abilioferraz/Projeto_01_aluraplus"
+    },
+    {
+      status: "Interactive Game",
+      title: "DETONA RALPH",
+      description:
+        "Jogo web interativo com lógica complexa e feedback visual em tempo real. Exemplifica manipulação avançada de DOM e game mechanics.",
+      tags: ["JavaScript", "HTML5", "Game"],
+      href: "https://github.com/abilioferraz/DETONA-RALPH"
+    },
+    {
+      status: "Code Challenge",
+      title: "Jogo Memória",
+      description:
+        "Jogo de memória com CSS animations avançadas e lógica de game state. Demonstra profundidade em programação e design interativo.",
+      tags: ["CSS3", "JavaScript", "Game"],
+      href: "https://github.com/abilioferraz/jogo-memoria"
+    },
+    {
+      status: "Logic Challenge",
+      title: "Desafio Lógica",
+      description:
+        "Desafio de programação resolvido com JavaScript puro. Exemplifica problem-solving e otimização de algoritmos.",
+      tags: ["JavaScript", "Algoritmos", "Logic"],
+      href: "https://github.com/abilioferraz/desafio-logica"
     },
     {
       status: "Open Source",
       title: "DIO Lab Open Source",
       description:
-        "Contribuição em projeto colaborativo com foco em controle de versão, pull requests e integração com equipes em ambientes profissionais.",
+        "Contribuição em projeto colaborativo open source. Demonstra experiência com versionamento Git e colaboração profissional.",
       tags: ["Git", "GitHub", "Colaboração"],
       href: "https://github.com/abilioferraz/dio-lab-open-source"
+    },
+    {
+      status: "Learning",
+      title: "Trilha CSS Desafio 01",
+      description:
+        "Desafio de CSS da trilha DIO com foco em semântica e responsividade. Prova de conceitos fundamentais bem consolidados.",
+      tags: ["CSS3", "Responsivo", "Design"],
+      href: "https://github.com/abilioferraz/trilha-css-desafio-01"
     }
   ],
   stack: [
@@ -369,39 +425,132 @@ function renderTimeline() {
 }
 
 function renderProjects() {
-  const container = document.querySelector("#project-grid");
+  try {
+    const wrapper = document.querySelector(".project-grid")?.parentElement;
+    const container = document.querySelector("#project-grid");
 
-  if (!container) {
-    return;
+    if (!container) {
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    portfolioConfig.projects.forEach((project) => {
+      const article = createElement("article", "project-card");
+      article.setAttribute("data-reveal", "");
+
+      const top = createElement("div", "project-card__top");
+      const headingWrap = createElement("div");
+      const status = createElement("span", "project-card__status", project.status);
+      const title = createElement("h3", "", project.title);
+      const description = createElement("p", "", project.description);
+      const footer = createElement("div", "project-card__footer");
+      const link = createElement("a", "project-link", "Ver repositório");
+
+      headingWrap.append(status, title);
+      link.href = project.href;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.setAttribute("aria-label", `Abrir repositório do projeto ${project.title}`);
+
+      footer.append(createTagList(project.tags), link);
+      top.append(headingWrap);
+      article.append(top, description, footer);
+      fragment.append(article);
+    });
+
+    container.replaceChildren(fragment);
+    
+    // Setup carrossel após renderizar cards
+    setupProjectCarousel();
+  } catch (error) {
+    console.error("Error rendering projects:", error);
+  }
+}
+
+function setupProjectCarousel() {
+  try {
+    const carousel = document.querySelector("#project-grid");
+    if (!carousel) return;
+
+    // Criar wrapper se não existir
+    let wrapper = carousel.parentElement;
+    if (!wrapper || !wrapper.classList.contains("carousel-wrapper")) {
+      wrapper = document.createElement("div");
+      wrapper.className = "carousel-wrapper";
+      carousel.parentElement.insertBefore(wrapper, carousel);
+      
+      // Criar container
+      const container = document.createElement("div");
+      container.className = "carousel-container";
+      wrapper.appendChild(container);
+      container.appendChild(carousel);
+
+      // Criar botões
+      const btnPrev = document.createElement("button");
+      btnPrev.className = "carousel-button carousel-prev";
+      btnPrev.setAttribute("aria-label", "Projetos anteriores");
+      btnPrev.innerHTML = "←";
+      
+      const btnNext = document.createElement("button");
+      btnNext.className = "carousel-button carousel-next";
+      btnNext.setAttribute("aria-label", "Próximos projetos");
+      btnNext.innerHTML = "→";
+
+      wrapper.insertBefore(btnPrev, container);
+      wrapper.appendChild(btnNext);
+
+      // Event listeners
+      btnPrev.addEventListener("click", () => scrollCarousel("prev"));
+      btnNext.addEventListener("click", () => scrollCarousel("next"));
+      carousel.addEventListener("scroll", updateCarouselButtons);
+    }
+
+    updateCarouselButtons();
+  } catch (error) {
+    console.error("Error setting up carousel:", error);
+  }
+}
+
+function scrollCarousel(direction) {
+  const carousel = document.querySelector("#project-grid");
+  if (!carousel) return;
+
+  const scrollAmount = carousel.clientWidth;
+  const totalScrollWidth = carousel.scrollWidth;
+  const containerWidth = carousel.clientWidth;
+  const maxScroll = totalScrollWidth - containerWidth;
+
+  let targetScroll = direction === "next" 
+    ? carousel.scrollLeft + scrollAmount 
+    : carousel.scrollLeft - scrollAmount;
+
+  // Loop infinito: voltar ao início ao chegar no final
+  if (targetScroll >= maxScroll) {
+    targetScroll = 0;
+  } else if (targetScroll < 0) {
+    targetScroll = maxScroll;
   }
 
-  const fragment = document.createDocumentFragment();
-
-  portfolioConfig.projects.forEach((project) => {
-    const article = createElement("article", "project-card");
-    article.setAttribute("data-reveal", "");
-
-    const top = createElement("div", "project-card__top");
-    const headingWrap = createElement("div");
-    const status = createElement("span", "project-card__status", project.status);
-    const title = createElement("h3", "", project.title);
-    const description = createElement("p", "", project.description);
-    const footer = createElement("div", "project-card__footer");
-    const link = createElement("a", "project-link", "Ver repositório");
-
-    headingWrap.append(status, title);
-    link.href = project.href;
-    link.target = "_blank";
-    link.rel = "noreferrer";
-    link.setAttribute("aria-label", `Abrir repositório do projeto ${project.title}`);
-
-    footer.append(createTagList(project.tags), link);
-    top.append(headingWrap);
-    article.append(top, description, footer);
-    fragment.append(article);
+  carousel.scrollTo({
+    left: targetScroll,
+    behavior: "smooth"
   });
+}
 
-  container.replaceChildren(fragment);
+function updateCarouselButtons() {
+  const carousel = document.querySelector("#project-grid");
+  const btnPrev = document.querySelector(".carousel-prev");
+  const btnNext = document.querySelector(".carousel-next");
+
+  if (!carousel || !btnPrev || !btnNext) return;
+
+  // Verificar posição para desabilitar botões
+  const atStart = carousel.scrollLeft <= 0;
+  const atEnd = carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 10);
+
+  btnPrev.disabled = atStart;
+  btnNext.disabled = atEnd;
 }
 
 function renderStack() {

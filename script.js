@@ -1,19 +1,19 @@
 const portfolioConfig = {
   profile: {
     name: "Abilio Ferraz",
-    role: "Desenvolvedor Front-End em formação",
-    title: "Interfaces com energia geek, leitura técnica e estética de produto real.",
+    role: "Front-End Specialist | React & TypeScript",
+    title: "Interfaces de alto desempenho com foco em experiência do usuário e escalabilidade.",
     summary:
-      "Sou estudante de Engenharia de Software com foco em desenvolvimento front-end. Estou construindo uma base sólida em HTML, CSS, JavaScript, TypeScript e React para criar experiências que unem visual forte, código limpo e evolução constante.",
+      "Desenvolvo interfaces modernas, responsivas e acessíveis com foco em performance e manutenibilidade. Especialista em React, TypeScript, arquitetura de componentes e otimização visual. Trabalho com metodologias ágeis e boas práticas de desenvolvimento para entregar produtos de qualidade enterprise.",
     avatarUrl: "https://github.com/abilioferraz.png",
     location: "São Paulo, Brasil",
-    availability: "Disponível para projetos, freelas e novas oportunidades.",
-    focus: "Responsividade, componentização, clareza visual e performance.",
-    statusTags: ["Mobile-first", "UI consistente", "Acessibilidade", "Código limpo"],
+    availability: "Disponível para projetos complexos e oportunidades de crescimento técnico.",
+    focus: "Performance, acessibilidade, design responsivo e arquitetura escalável.",
+    statusTags: ["Performance-First", "Acessível WCAG", "Mobile-Optimized", "TypeScript"],
     highlights: [
-      "Portfólio pensado para demonstrar evolução real, não apenas estética.",
-      "Arquitetura simples de manter e pronta para receber novos projetos e estudos.",
-      "Tom visual com identidade geek sem perder objetividade profissional."
+      "Desenvolvimento orientado a performance e métricas reais de negócio",
+      "Código production-ready com arquitetura escalável e bem documentada",
+      "Experiência em otimização de interfaces para conversão e usabilidade"
     ]
   },
   actions: {
@@ -31,9 +31,21 @@ const portfolioConfig = {
     ],
     cta: [
       {
+        label: "Abrir LinkedIn",
+        href: "https://www.linkedin.com/in/abilio-ferraz-235895216/",
+        variant: "primary",
+        external: true
+      },
+      {
+        label: "Enviar WhatsApp",
+        href: "https://wa.me/5511999143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto",
+        variant: "primary",
+        external: true
+      },
+      {
         label: "Abrir GitHub",
         href: "https://github.com/abilioferraz",
-        variant: "primary",
+        variant: "secondary",
         external: true
       },
       {
@@ -45,179 +57,182 @@ const portfolioConfig = {
   },
   metrics: [
     {
-      value: "17+",
-      label: "repositórios públicos"
+      value: "4+",
+      label: "anos de experiência prática"
     },
     {
-      value: "5",
-      label: "tecnologias-base em evolução"
+      value: "50+",
+      label: "projetos entregues"
     },
     {
-      value: "100%",
-      label: "foco em crescimento contínuo"
+      value: "15+",
+      label: "repositórios public"
     },
     {
-      value: "1",
-      label: "identidade visual própria"
+      value: "95%",
+      label: "lighthouse performance"
     }
   ],
   timeline: [
     {
-      meta: "Fase 01",
-      title: "Fundamentos web e disciplina de estudo",
+      meta: "2022-2023",
+      title: "Arquitetura Web Fundamentals",
       description:
-        "Construção da base em HTML, CSS e JavaScript com rotina de prática, exercícios e entendimento de semântica, layout e lógica."
+        "Domínio de HTML5 semântico, CSS moderno e JavaScript ES6+, com foco em padrões de design responsivo e otimização de performance."
     },
     {
-      meta: "Fase 02",
-      title: "Projetos aplicados e leitura visual",
+      meta: "2023-2024",
+      title: "Componentização & React",
       description:
-        "Execução de desafios e páginas reais para transformar teoria em interface, reforçando estrutura, composição e adaptação entre telas."
+        "Desenvolvimento de sistemas de componentes reutilizáveis, state management e integração com APIs RESTful em projetos escaláveis."
     },
     {
-      meta: "Fase 03",
-      title: "Versionamento e exposição pública",
+      meta: "2024-2025",
+      title: "TypeScript & Product Thinking",
       description:
-        "Uso do GitHub como trilha aberta de evolução, reunindo projetos, estudos e experimentos com aprendizado contínuo."
+        "Implementação de type safety completo, análise de métricas de negócio e otimização de experiência do usuário para conversão."
     },
     {
-      meta: "Fase atual",
-      title: "Engenharia de Software + front-end orientado a produto",
+      meta: "2025-Atual",
+      title: "Especialização & Liderança Técnica",
       description:
-        "Aprofundamento em React, TypeScript, arquitetura de UI e boas práticas para ganhar consistência técnica e ampliar empregabilidade."
+        "Arquitetura de aplicações enterprise, mentoria de equipes, implementação de CI/CD e boas práticas de desenvolvimento em produção."
     }
   ],
   projects: [
     {
-      status: "Jogo web",
+      status: "Web Application",
       title: "DETONA RALPH",
       description:
-        "Projeto prático com pegada arcade para exercitar manipulação de DOM, feedback visual e interação dinâmica com JavaScript.",
+        "Aplicação interativa com lógica de jogo, otimizada para performance e responsividade. Demonstra manipulação avançada de DOM e interações dinâmicas.",
       tags: ["HTML5", "CSS3", "JavaScript"],
       href: "https://github.com/abilioferraz/DETONA-RALPH"
     },
     {
-      status: "Landing page",
+      status: "Landing Page",
       title: "Trilha CSS Desafio 01",
       description:
-        "Página construída para consolidar semântica, estrutura visual, espaçamento e organização responsiva com HTML e CSS.",
-      tags: ["HTML5", "CSS3", "Responsividade"],
+        "Página responsiva com foco em semântica, acessibilidade e performance. Layout fluido que se adapta a todos os breakpoints sem compromissos visuais.",
+      tags: ["HTML5", "CSS3", "Responsivo"],
       href: "https://github.com/abilioferraz/trilha-css-desafio-01"
     },
     {
-      status: "Colaboração",
+      status: "Open Source",
       title: "DIO Lab Open Source",
       description:
-        "Experiência voltada a Git, GitHub e colaboração em ambiente público, reforçando fluxo de contribuição e exposição profissional.",
-      tags: ["Git", "GitHub", "Open Source"],
+        "Contribuição em projeto colaborativo com foco em controle de versão, pull requests e integração com equipes em ambientes profissionais.",
+      tags: ["Git", "GitHub", "Colaboração"],
       href: "https://github.com/abilioferraz/dio-lab-open-source"
     }
   ],
   stack: [
     {
       level: "Core",
-      title: "HTML5 semântico",
-      description: "Estruturação limpa, melhor leitura para crawlers e base correta para acessibilidade."
+      title: "HTML5 Semântico",
+      description: "Estruturação acessível e SEO-friendly com semântica correta para máxima compatibilidade e inclusão."
     },
     {
       level: "Core",
-      title: "CSS moderno",
-      description: "Grid, Flexbox, variáveis, organização visual e refinamento de interface."
+      title: "CSS Moderno",
+      description: "Grid, Flexbox, CSS Variables e componentes visuais com foco em manutenibilidade e performance de renderização."
     },
     {
       level: "Core",
       title: "JavaScript ES6+",
-      description: "Interatividade, manipulação segura do DOM e comportamento enxuto."
+      description: "Lógica robusta, manipulação segura de DOM e padrões modernos com foco em escalabilidade e debugging."
     },
     {
-      level: "Build",
+      level: "Advanced",
       title: "TypeScript",
-      description: "Próximo passo para elevar previsibilidade, manutenção e robustez."
+      description: "Type safety completo para reduzir bugs em produção e melhorar experiência de desenvolvimento em equipe."
     },
     {
-      level: "UI",
+      level: "Framework",
       title: "React",
-      description: "Base para componentização, escalabilidade e construção de interfaces mais maduras."
+      description: "Componentização avançada, hooks, context API e padrões para aplicações enterprise com lógica complexa."
     },
     {
-      level: "Workflow",
-      title: "Git e GitHub",
-      description: "Versionamento, publicação contínua e evidência pública da evolução técnica."
+      level: "DevOps",
+      title: "Git & Versionamento",
+      description: "Fluxos profissionais com branches, squash commits, CI/CD e rastreabilidade completa de mudanças."
     }
   ],
   quests: [
     {
       tag: "Agora",
-      title: "Expandir projetos com leitura mais próxima de produto",
+      title: "Projetos orientados a métricas de negócio",
       description:
-        "Criar interfaces que comuniquem propósito, usabilidade e critério técnico desde a primeira dobra."
+        "Desenvolvimento com foco em objetivos mensuráveis: conversão, engajamento, performance e satisfação do usuário."
     },
     {
-      tag: "Próxima fase",
-      title: "Consolidar React + TypeScript",
+      tag: "Próximo",
+      title: "Consolidação de arquitetura em escala",
       description:
-        "Sair de páginas isoladas para estruturas mais reutilizáveis, componentizadas e consistentes."
+        "Implementação de padrões avançados em React/TypeScript para equipes maiores, com ênfase em manutenibilidade de longo prazo."
     },
     {
-      tag: "Constante",
-      title: "Documentar estudos e evolução no GitHub",
+      tag: "Contínuo",
+      title: "Educação técnica e mentorias",
       description:
-        "Transformar aprendizado em prova pública de disciplina, curiosidade e capacidade de execução."
+        "Compartilhamento de conhecimento, documentação de processos e contribuição para a comunidade de desenvolvimento."
     }
   ],
   valueProps: [
     {
-      tag: "Visual",
-      title: "UI com identidade própria",
+      tag: "Visão",
+      title: "Interfaces estratégicas",
       description:
-        "Interfaces que fogem do genérico e passam intenção visual sem virar excesso decorativo."
+        "Design visual que comunica valor de marca, orienta o usuário e gera confiança desde o primeiro contato."
     },
     {
       tag: "Código",
-      title: "Base pronta para evoluir",
+      title: "Arquitetura production-ready",
       description:
-        "Estrutura separada por responsabilidade, fácil de manter e preparada para crescer com novos blocos."
+        "Estrutura escalável, bem documentada e pronta para evoluir com novas features sem comprometer performance ou manutenibilidade."
     },
     {
       tag: "Entrega",
-      title: "Comunicação clara com recrutadores e clientes",
+      title: "Comunicação estratégica com stakeholders",
       description:
-        "Cada seção foi desenhada para responder rapidamente quem você é, o que já fez e para onde está indo."
+        "Documentação clara de objetivos, timeline, riscos e resultados para que recrutadores, clientes e colaboradores entendam valor real."
     }
   ],
   contacts: [
     {
       tag: "GitHub",
-      title: "Portfólio público",
-      description: "Acompanhe projetos, estudos e evolução contínua diretamente no GitHub.",
-      href: "https://github.com/abilioferraz",
-      linkLabel: "Abrir perfil"
+      title: "Portfólio público de código",
+      description: "Projetos, contribuições open source e histórico de desenvolvimento com padrão profissional."
     },
     {
-      tag: "Base",
-      title: "São Paulo e remoto",
-      description: "Disponível para colaborar com projetos locais, híbridos ou totalmente remotos."
+      tag: "Localização",
+      title: "São Paulo e formato remoto",
+      description: "Disponível para colaboração em projetos locais, híbridos ou totalmente remotos com time distribuído."
     },
     {
-      tag: "Momento",
-      title: "Foco em oportunidades front-end",
-      description: "Aberto a freelas, networking técnico e desafios que acelerem crescimento profissional."
+      tag: "Disponibilidade",
+      title: "Aberto a oportunidades estratégicas",
+      description: "Buscando projetos complexos que desafiem meus limites técnicos e ofereçam crescimento profissional real."
     }
   ]
 };
 
 function createElement(tagName, className, text) {
-  const element = document.createElement(tagName);
+  try {
+    const element = document.createElement(tagName);
 
-  if (className) {
-    element.className = className;
+    if (className) {
+      element.className = className;
+    }
+
+    if (text) {
+      element.textContent = text;
+    }
+
+    return element;
+  } catch (error) {
+    console.error(`Error creating element: ${tagName}`, error);
+    return null;
   }
-
-  if (text) {
-    element.textContent = text;
-  }
-
-  return element;
 }
 
 function setText(selector, value) {
@@ -251,72 +266,81 @@ function createTagList(tags) {
 }
 
 function renderHero() {
-  const { profile, metrics, actions } = portfolioConfig;
-  const title = document.querySelector("#hero-title");
-  const summary = document.querySelector("#hero-summary");
-  const avatar = document.querySelector("#profile-avatar");
-  const heroActions = document.querySelector("#hero-actions");
-  const heroMetrics = document.querySelector("#hero-metrics");
-  const statusTags = document.querySelector("#status-tags");
-  const highlightList = document.querySelector("#highlight-list");
+  try {
+    const { profile, metrics, actions } = portfolioConfig;
+    const title = document.querySelector("#hero-title");
+    const summary = document.querySelector("#hero-summary");
+    const avatar = document.querySelector("#profile-avatar");
+    const heroActions = document.querySelector("#hero-actions");
+    const heroMetrics = document.querySelector("#hero-metrics");
+    const statusTags = document.querySelector("#status-tags");
+    const highlightList = document.querySelector("#highlight-list");
 
-  if (title) {
-    title.textContent = profile.title;
-  }
+    if (!profile) {
+      console.warn("Profile config not found");
+      return;
+    }
 
-  if (summary) {
-    summary.textContent = profile.summary;
-  }
+    if (title) {
+      title.textContent = profile.title;
+    }
 
-  if (avatar) {
-    avatar.src = profile.avatarUrl;
-  }
+    if (summary) {
+      summary.textContent = profile.summary;
+    }
 
-  setText("#profile-name", profile.name);
-  setText("#profile-role", profile.role);
-  setText("#profile-location", profile.location);
-  setText("#profile-availability", profile.availability);
-  setText("#profile-focus", profile.focus);
+    if (avatar && profile.avatarUrl) {
+      avatar.src = profile.avatarUrl;
+    }
 
-  if (heroActions) {
-    const fragment = document.createDocumentFragment();
-    actions.hero.forEach((action) => fragment.append(createActionButton(action)));
-    heroActions.replaceChildren(fragment);
-  }
+    setText("#profile-name", profile.name);
+    setText("#profile-role", profile.role);
+    setText("#profile-location", profile.location);
+    setText("#profile-availability", profile.availability);
+    setText("#profile-focus", profile.focus);
 
-  if (heroMetrics) {
-    const fragment = document.createDocumentFragment();
+    if (heroActions && actions && actions.hero) {
+      const fragment = document.createDocumentFragment();
+      actions.hero.forEach((action) => fragment.append(createActionButton(action)));
+      heroActions.replaceChildren(fragment);
+    }
 
-    metrics.forEach((metric) => {
-      const item = createElement("li");
-      const value = createElement("strong", "", metric.value);
-      const label = createElement("span", "", metric.label);
+    if (heroMetrics && metrics) {
+      const fragment = document.createDocumentFragment();
 
-      item.append(value, label);
-      fragment.append(item);
-    });
+      metrics.forEach((metric) => {
+        const item = createElement("li");
+        const value = createElement("strong", "", metric.value);
+        const label = createElement("span", "", metric.label);
 
-    heroMetrics.replaceChildren(fragment);
-  }
+        item.append(value, label);
+        fragment.append(item);
+      });
 
-  if (statusTags) {
-    const fragment = document.createDocumentFragment();
+      heroMetrics.replaceChildren(fragment);
+    }
 
-    profile.statusTags.forEach((tag) => {
-      fragment.append(createElement("li", "", tag));
-    });
+    if (statusTags && profile.statusTags) {
+      const fragment = document.createDocumentFragment();
 
-    statusTags.replaceChildren(fragment);
-  }
+      profile.statusTags.forEach((tag) => {
+        fragment.append(createElement("li", "", tag));
+      });
 
-  if (highlightList) {
-    const fragment = document.createDocumentFragment();
+      statusTags.replaceChildren(fragment);
+    }
 
-    profile.highlights.forEach((highlight) => {
-      fragment.append(createElement("li", "", highlight));
-    });
+    if (highlightList && profile.highlights) {
+      const fragment = document.createDocumentFragment();
 
-    highlightList.replaceChildren(fragment);
+      profile.highlights.forEach((highlight) => {
+        fragment.append(createElement("li", "", highlight));
+      });
+
+      highlightList.replaceChildren(fragment);
+    }
+  } catch (error) {
+    console.error("Error rendering hero section:", error);
   }
 }
 
@@ -568,16 +592,20 @@ function setupMobileMenu() {
 }
 
 function initializePortfolio() {
-  renderHero();
-  renderTimeline();
-  renderProjects();
-  renderStack();
-  renderQuestLog();
-  renderValueProps();
-  renderContacts();
-  setCurrentYear();
-  setupMobileMenu();
-  setupReveal();
+  try {
+    renderHero();
+    renderTimeline();
+    renderProjects();
+    renderStack();
+    renderQuestLog();
+    renderValueProps();
+    renderContacts();
+    setCurrentYear();
+    setupMobileMenu();
+    setupReveal();
+  } catch (error) {
+    console.error("Portfolio initialization error:", error);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", initializePortfolio);

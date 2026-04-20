@@ -286,6 +286,12 @@ button {
     color 180ms ease;
 }
 
+/* Botões em grid ocupam toda a célula */
+.cta-actions .button {
+  display: flex;
+  width: 100%;
+}
+
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
@@ -379,6 +385,13 @@ button {
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 1.75rem;
+}
+
+/* Otimização para CTA com 4 botões */
+.cta-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .hero__metrics {
@@ -478,6 +491,34 @@ button {
 }
 
 .player-card__body p {
+  margin: 0.45rem 0 0;
+  color: var(--text-muted);
+}
+
+/* Professional naming alias */
+.profile-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-card__avatar {
+  width: 5.7rem;
+  height: 5.7rem;
+  border: 3px solid rgba(122, 247, 223, 0.18);
+  border-radius: 24px;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(122, 247, 223, 0.2), rgba(126, 163, 255, 0.2));
+}
+
+.profile-card__body h2 {
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.05;
+}
+
+.profile-card__body p {
   margin: 0.45rem 0 0;
   color: var(--text-muted);
 }
@@ -832,6 +873,10 @@ button {
   .quest-grid,
   .value-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-actions {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cta-section {

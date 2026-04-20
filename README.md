@@ -1,6 +1,7 @@
 <div align="center">
 
 # Abilio Ferraz - Front-End Specialist Portfolio
+
 ### Landing Page Profissional • Front-End Development • Performance-First Design
 
 Portfólio profissional desenvolvido com foco em performance, acessibilidade e conversão. Apresentação estratégica de expertise técnico, projetos e roadmap de desenvolvimento.
@@ -48,7 +49,6 @@ O objetivo é comunicar valor profissional de forma clara e memorável, posicion
 - **Inventário Técnico**
   Bloco com stack principal e contexto do uso de cada tecnologia
 
-
 - **Histórico Profissional**
   Timeline de evolução técnica e marcos profissionais
 
@@ -71,12 +71,12 @@ O objetivo é comunicar valor profissional de forma clara e memorável, posicion
 
 ## 🛠 Tecnologias & Arquitetura
 
-| Tecnologia | Propósito | Notas |
-|-----------|-----------|-------|
-| **HTML5** | Estrutura semântica e acessibilidade | WCAG AA compliant |
-| **CSS3** | Design responsivo e visual design | Grid, Flexbox, CSS Variables |
-| **JavaScript ES6+** | Renderização dinâmica e interações | Vanilla JS, sem dependências |
-| **Git** | Versionamento e CI/CD | GitHub workflow |
+| Tecnologia          | Propósito                            | Notas                        |
+| ------------------- | ------------------------------------ | ---------------------------- |
+| **HTML5**           | Estrutura semântica e acessibilidade | WCAG AA compliant            |
+| **CSS3**            | Design responsivo e visual design    | Grid, Flexbox, CSS Variables |
+| **JavaScript ES6+** | Renderização dinâmica e interações   | Vanilla JS, sem dependências |
+| **Git**             | Versionamento e CI/CD                | GitHub workflow              |
 
 ### Decisões Arquiteturais
 

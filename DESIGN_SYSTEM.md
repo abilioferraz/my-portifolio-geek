@@ -3,6 +3,7 @@
 ## 🎨 Color Palette
 
 ### Core Colors
+
 - **Primary**: `#7af7df` (Cyan) - CTAs e highlights
 - **Primary Strong**: `#5bddc9` - Hover states
 - **Secondary**: `#ffca63` (Yellow) - Tags e labels
@@ -10,11 +11,13 @@
 - **Danger**: `#ff8d83` (Red) - Alerts e errors
 
 ### Background
+
 - **Main BG**: `#060b17` - Background principal
 - **Surface**: `rgba(14, 24, 48, 0.78)` - Cards e containers
 - **Surface Strong**: `#121f3c` - Elementos elevados
 
 ### Text
+
 - **Primary**: `#f3f7ff` - Texto principal
 - **Muted**: `#97a6c6` - Texto secundário
 
@@ -23,6 +26,7 @@
 ## 📐 Typography
 
 ### Font Stack
+
 ```css
 /* Headlines */
 'Chakra Petch', sans-serif
@@ -32,6 +36,7 @@
 ```
 
 ### Sizes (Responsive)
+
 - **H1**: `clamp(2.8rem, 9vw, 5.8rem)`
 - **H2**: `clamp(2rem, 6vw, 3.4rem)`
 - **H3**: `1.35rem`
@@ -39,6 +44,7 @@
 - **Small**: `0.9rem - 0.95rem`
 
 ### Font Weights
+
 - Regular: 400
 - Medium: 500
 - Semi-bold: 600
@@ -49,13 +55,12 @@
 ## 🎯 Spacing Scale
 
 ```css
---radius-sm: 12px     /* Botões, inputs */
---radius-md: 20px     /* Cards */
---radius-lg: 28px     /* Containers */
---radius-xl: 36px     /* Panels */
+--radius-sm: 12px /* Botões, inputs */ --radius-md: 20px /* Cards */
+  --radius-lg: 28px /* Containers */ --radius-xl: 36px /* Panels */;
 ```
 
 ### Margins & Padding
+
 - xs: 0.5rem
 - sm: 0.75rem - 1rem
 - md: 1.25rem - 1.5rem
@@ -70,22 +75,17 @@
 
 ```html
 <!-- Primary Button -->
-<a class="button button--primary" href="#link">
-  Ação Principal
-</a>
+<a class="button button--primary" href="#link"> Ação Principal </a>
 
 <!-- Secondary Button -->
-<a class="button button--secondary" href="#link">
-  Ação Secundária
-</a>
+<a class="button button--secondary" href="#link"> Ação Secundária </a>
 
 <!-- Ghost Button -->
-<a class="button button--ghost" href="#link">
-  Link Discreto
-</a>
+<a class="button button--ghost" href="#link"> Link Discreto </a>
 ```
 
 **Estados:**
+
 - Default: background gradiente
 - Hover: transform translateY(-2px), shadow aumentada
 - Focus: outline focus-visible
@@ -110,6 +110,7 @@
 ```
 
 **Variações:**
+
 - `.project-card` - Projetos
 - `.stack-card` - Stack técnico
 - `.quest-card` - Objetivos
@@ -132,8 +133,8 @@
 ### Menu Mobile
 
 ```html
-<button 
-  class="menu-toggle" 
+<button
+  class="menu-toggle"
   data-menu-toggle
   aria-expanded="false"
   aria-label="Abrir menu principal"
@@ -147,6 +148,7 @@
 ```
 
 **Comportamento:**
+
 - Abre/fecha ao clicar no botão
 - Fecha ao selecionar um link (em mobile)
 - Fecha ao pressionar Escape
@@ -169,29 +171,26 @@
 ## ♿ Acessibilidade
 
 ### ARIA Labels
+
 ```html
 <!-- Menu toggle button -->
-<button aria-expanded="false" aria-controls="site-menu">
-  Menu
-</button>
+<button aria-expanded="false" aria-controls="site-menu">Menu</button>
 
 <!-- Icon without text -->
 <span class="icon" aria-hidden="true">→</span>
 
 <!-- Non-visual descriptions -->
-<a aria-label="Abrir repositório do projeto XYZ">
-  Ver código
-</a>
+<a aria-label="Abrir repositório do projeto XYZ"> Ver código </a>
 ```
 
 ### Keyboard Navigation
 
-| Key | Behavior |
-|-----|----------|
-| `Tab` | Navigate entre elementos interativos |
-| `Enter` | Ativar links e buttons |
-| `Escape` | Fechar menu mobile |
-| `Space` | Ativar buttons |
+| Key      | Behavior                             |
+| -------- | ------------------------------------ |
+| `Tab`    | Navigate entre elementos interativos |
+| `Enter`  | Ativar links e buttons               |
+| `Escape` | Fechar menu mobile                   |
+| `Space`  | Ativar buttons                       |
 
 ### Focus Management
 
@@ -205,6 +204,7 @@
 ### Color Contrast
 
 Mínimo WCAG AA:
+
 - Normal text: 4.5:1
 - Large text (18pt+): 3:1
 - Graphical elements: 3:1
@@ -216,12 +216,11 @@ Mínimo WCAG AA:
 ### Reveal Animation (Scroll)
 
 ```html
-<section data-reveal>
-  Conteúdo que anima ao entrar na viewport
-</section>
+<section data-reveal>Conteúdo que anima ao entrar na viewport</section>
 ```
 
 **Propriedades:**
+
 - Fade in: 0 → 1 opacity
 - Slide up: 18px translateY → 0
 - Duration: 420ms
@@ -230,6 +229,7 @@ Mínimo WCAG AA:
 ### Hover Effects
 
 Cards têm:
+
 - `transform: translateY(-4px)` on hover
 - `border-color` mais forte
 - `box-shadow` aumentada
@@ -239,18 +239,21 @@ Cards têm:
 ## 📱 Responsive Behavior
 
 ### Mobile (< 640px)
+
 - Menu hamburger ativo
 - Grids em 1 coluna
 - Tipografia menor
 - Spacing reduzido
 
 ### Tablet (640px - 860px)
+
 - Menu horizontal
 - Grids em 2 colunas
 - Tipografia escalada
 - Spacing normal
 
 ### Desktop (860px+)
+
 - Layout completo com sidebars
 - Grids em 3+ colunas
 - Tipografia máxima
@@ -264,19 +267,38 @@ Conteúdo é renderizado via `portfolioConfig` em `script.js`:
 
 ```javascript
 const portfolioConfig = {
-  profile: { /* ... */ },
-  timeline: [ /* ... */ ],
-  projects: [ /* ... */ ],
-  stack: [ /* ... */ ],
-  quests: [ /* ... */ ],
-  valueProps: [ /* ... */ ],
-  contacts: [ /* ... */ ],
-  metrics: [ /* ... */ ],
-  actions: { /* ... */ }
+  profile: {
+    /* ... */
+  },
+  timeline: [
+    /* ... */
+  ],
+  projects: [
+    /* ... */
+  ],
+  stack: [
+    /* ... */
+  ],
+  quests: [
+    /* ... */
+  ],
+  valueProps: [
+    /* ... */
+  ],
+  contacts: [
+    /* ... */
+  ],
+  metrics: [
+    /* ... */
+  ],
+  actions: {
+    /* ... */
+  },
 };
 ```
 
 **Vantagens:**
+
 - Fácil manutenção de conteúdo
 - Separação de dados e apresentação
 - Reutilização de componentes
@@ -287,11 +309,13 @@ const portfolioConfig = {
 ## 🚀 Performance Tips
 
 1. **Lazy Load Images**
+
    ```html
-   <img loading="lazy" src="..." alt="...">
+   <img loading="lazy" src="..." alt="..." />
    ```
 
 2. **Use CSS Variables**
+
    ```css
    color: var(--text-muted);
    ```
@@ -306,7 +330,7 @@ const portfolioConfig = {
 
 5. **Preload Critical Resources**
    ```html
-   <link rel="preload" href="..." as="...">
+   <link rel="preload" href="..." as="..." />
    ```
 
 ---

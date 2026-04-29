@@ -586,7 +586,7 @@ button {
 .section-heading {
   display: grid;
   gap: 0.95rem;
-  max-width: 65ch;
+  max-width: 90ch;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
 }

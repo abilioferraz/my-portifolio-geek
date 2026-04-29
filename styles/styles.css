@@ -20,9 +20,9 @@
   --radius-md: 20px;
   --radius-lg: 28px;
   --radius-xl: 36px;
-  --content-width: min(1120px, calc(100vw - 2rem));
+  --content-width: min(1200px, calc(100vw - 2rem));
   /* Espaçamento entre seções otimizado para não ficar poluído */
-  --section-space: clamp(5.5rem, 10vw, 8rem);
+  --section-space: clamp(5.75rem, 10vw, 8.5rem);
   --header-height: 5.5rem;
   /* Espaçamentos internos */
   --spacing-xs: 0.5rem;
@@ -30,6 +30,7 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
+  --card-gap: 1.25rem;
 }
 
 *,
@@ -338,12 +339,13 @@ button {
 
 .hero {
   display: grid;
-  gap: 2rem;
+  gap: clamp(2rem, 4vw, 4.25rem);
   padding: 1.5rem 0 0;
 }
 
 .hero__content {
   padding-top: clamp(1rem, 2vw, 1.5rem);
+  padding-right: clamp(0rem, 2vw, 1.75rem);
 }
 
 .section-kicker {
@@ -359,11 +361,13 @@ button {
   margin: 0;
   font-family: "Chakra Petch", sans-serif;
   line-height: 0.98;
+  text-wrap: balance;
 }
 
 .hero h1 {
-  max-width: 12ch;
-  font-size: clamp(2.8rem, 9vw, 5.8rem);
+  max-width: 9.25ch;
+  font-size: clamp(3rem, 7vw, 5.15rem);
+  letter-spacing: -0.04em;
 }
 
 .hero__summary,
@@ -381,8 +385,8 @@ button {
 }
 
 .hero__summary {
-  max-width: 64ch;
-  margin: 1.25rem 0 0;
+  max-width: 58ch;
+  margin: 1.5rem 0 0;
   font-size: clamp(1rem, 2.4vw, 1.15rem);
 }
 
@@ -465,44 +469,9 @@ button {
 }
 
 .hero__panel {
-  padding: 1.3rem;
+  padding: 1.6rem;
 }
 
-.player-card {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.player-card__avatar {
-  width: 5.7rem;
-  height: 5.7rem;
-  border: 3px solid rgba(122, 247, 223, 0.18);
-  border-radius: 24px;
-  object-fit: cover;
-  background: linear-gradient(135deg, rgba(122, 247, 223, 0.2), rgba(126, 163, 255, 0.2));
-}
-
-.panel-label {
-  margin: 0 0 0.4rem;
-  color: var(--primary);
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.player-card__body h2 {
-  margin: 0;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1.65rem;
-  line-height: 1.05;
-}
-
-.player-card__body p {
-  margin: 0.45rem 0 0;
-  color: var(--text-muted);
-}
-
-/* Professional naming alias */
 .profile-card {
   display: flex;
   gap: 1rem;
@@ -615,6 +584,8 @@ button {
 }
 
 .section-heading {
+  display: grid;
+  gap: 0.95rem;
   max-width: 65ch;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
@@ -627,7 +598,7 @@ button {
 
 .section-heading p,
 .cta-copy p {
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
 .timeline {
@@ -710,37 +681,44 @@ button {
 .quest-grid,
 .value-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--card-gap);
 }
 
-/* Carrossel de Projetos */
 .project-grid {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 1rem 0;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-
-.project-grid::-webkit-scrollbar {
-  display: none;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .project-card {
   position: relative;
-  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 1.45rem;
   border-radius: var(--radius-md);
   transition:
     transform 220ms ease,
     border-color 220ms ease,
     box-shadow 220ms ease;
-  flex: 0 0 calc(100% - 1rem);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  max-width: 100%;
+  grid-column: span 12;
+  background:
+    radial-gradient(circle at top right, rgba(122, 247, 223, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(17, 28, 53, 0.92), rgba(9, 15, 31, 0.98));
+}
+
+.project-card--featured {
+  background:
+    radial-gradient(circle at top right, rgba(122, 247, 223, 0.15), transparent 35%),
+    linear-gradient(180deg, rgba(18, 33, 63, 0.98), rgba(9, 15, 31, 0.98));
+}
+
+.project-card--featured h3 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.project-card--featured .project-card__detail {
+  max-width: 62ch;
 }
 
 .stack-card,
@@ -748,6 +726,8 @@ button {
 .value-card,
 .contact-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 1.25rem;
   border-radius: var(--radius-md);
   transition:
@@ -756,7 +736,6 @@ button {
     box-shadow 220ms ease;
 }
 
-/* Hover states para todos os cards */
 .project-card:hover,
 .project-card:focus-within,
 .stack-card:hover,
@@ -772,67 +751,6 @@ button {
   box-shadow: var(--shadow-xl);
 }
 
-/* Controles do Carrossel */
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.carousel-button {
-  position: relative;
-  z-index: 5;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  padding: 0;
-  border: 1px solid rgba(122, 247, 223, 0.35);
-  border-radius: 12px;
-  background: rgba(122, 247, 223, 0.08);
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    background-color 180ms ease,
-    box-shadow 180ms ease;
-  flex-shrink: 0;
-}
-
-.carousel-button:hover,
-.carousel-button:focus-visible {
-  transform: scale(1.1);
-  border-color: var(--primary);
-  background: rgba(122, 247, 223, 0.15);
-  box-shadow: 0 8px 20px rgba(122, 247, 223, 0.2);
-}
-
-.carousel-button:active {
-  transform: scale(0.95);
-}
-
-.carousel-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.carousel-button:disabled:hover {
-  transform: none;
-  border-color: rgba(122, 247, 223, 0.35);
-  background: rgba(122, 247, 223, 0.08);
-  box-shadow: none;
-}
-
-.carousel-container {
-  flex: 1;
-  min-width: 0;
-}
-
 .project-card__top,
 .contact-card__top {
   display: flex;
@@ -846,13 +764,26 @@ button {
   color: var(--primary);
 }
 
+.project-card__heading {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.project-card__detail {
+  margin-top: 1rem !important;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
 .project-card__footer,
 .contact-card__footer {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1.75rem;
+  margin-top: auto;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(122, 247, 223, 0.1);
 }
@@ -864,6 +795,17 @@ button {
   gap: 0.45rem;
   color: var(--text);
   font-weight: 700;
+}
+
+.project-card__footer .tag-list {
+  flex: 1 1 16rem;
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.85rem 1rem;
 }
 
 .project-link::after,
@@ -894,15 +836,21 @@ button {
 
 .cta-section {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
+  align-items: start;
   background:
     radial-gradient(circle at 90% 10%, rgba(122, 247, 223, 0.14), transparent 30%),
     linear-gradient(180deg, rgba(18, 31, 60, 0.86), rgba(8, 14, 28, 0.96));
 }
 
+.cta-copy {
+  max-width: 36rem;
+}
+
 .contact-panel {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
+  align-content: start;
 }
 
 .contact-list {
@@ -971,13 +919,21 @@ button {
   }
 
   .stack-grid,
-  .quest-grid,
-  .value-grid {
+  .value-grid,
+  .contact-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quest-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-card {
-    flex: 0 0 calc(50% - 0.5rem);
+    grid-column: span 6;
+  }
+
+  .project-card--featured {
+    grid-column: span 12;
   }
 
   .cta-actions {
@@ -1012,36 +968,43 @@ button {
 
 @media (min-width: 860px) {
   .hero {
-    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.82fr);
     align-items: start;
-    gap: 2rem;
+    gap: clamp(3rem, 4vw, 5rem);
     min-height: calc(100vh - var(--header-height) - 3rem);
   }
 
   .section--split {
     display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-    gap: 1.6rem;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
     align-items: start;
   }
 
   .stack-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .quest-grid,
   .value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quest-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .project-card {
-    flex: 0 0 calc(33.333% - 0.667rem);
+    grid-column: span 4;
+  }
+
+  .project-card--featured {
+    grid-column: span 12;
   }
 
   .cta-section {
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.88fr);
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
     gap: 2rem;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -1078,16 +1041,14 @@ button {
   }
 }
 
-/* Responsividade do Carrossel */
 @media (max-width: 640px) {
-  .carousel-button {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.25rem;
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
-  .project-card {
-    flex: 0 0 100%;
+  .project-card,
+  .project-card--featured {
+    grid-column: span 1;
   }
 }
 

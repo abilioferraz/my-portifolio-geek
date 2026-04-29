@@ -1,30 +1,30 @@
 const portfolioConfig = {
   profile: {
     name: "Abilio Ferraz",
-    role: "Front-End Specialist | React & TypeScript",
-    title: "Interfaces de alto desempenho com foco em experiência do usuário e escalabilidade.",
+    role: "Front-End Developer | UX/UI Designer",
+    title: "Front-end com foco em UX, performance e interfaces escaláveis.",
     summary:
-      "Desenvolvo interfaces modernas, responsivas e acessíveis com foco em performance e manutenibilidade. Especialista em React, TypeScript, arquitetura de componentes e otimização visual. Trabalho com metodologias ágeis e boas práticas de desenvolvimento para entregar produtos de qualidade enterprise.",
+      "Atuo com desenvolvimento front-end e UX/UI, combinando construção visual, semântica, responsividade e atenção ao fluxo do usuário. Minha base passa por experiência profissional em interface, estudos contínuos em React, Next.js, Angular e TypeScript, além de uma formação em Engenharia de Software apoiada por um background forte de engenharia.",
     avatarUrl: "https://github.com/abilioferraz.png",
-    location: "São Paulo, Brasil",
-    availability: "Disponível para projetos complexos e oportunidades de crescimento técnico.",
-    focus: "Performance, acessibilidade, design responsivo e arquitetura escalável.",
-    statusTags: ["Performance-First", "Acessível WCAG", "Mobile-Optimized", "TypeScript"],
+    location: "São Paulo, Brasil | Remoto",
+    availability: "Experiência em Front-End e UX/UI na 5.2.0 Brasil LTDA entre 2020 e 2022.",
+    focus: "Engenharia de Software em formação, com background anterior em Engenharia Civil.",
+    statusTags: ["React", "Next.js", "Angular", "TypeScript", "UX/UI", "SEO"],
     highlights: [
-      "Desenvolvimento orientado a performance e métricas reais de negócio",
-      "Código production-ready com arquitetura escalável e bem documentada",
-      "Experiência em otimização de interfaces para conversão e usabilidade"
+      "Experiência profissional anterior com front-end e desenho de experiência.",
+      "Raciocínio de engenharia aplicado à organização, clareza e estrutura do produto.",
+      "Portfólio público com estudos, projetos autorais e assessments recentes."
     ]
   },
   actions: {
     hero: [
       {
-        label: "Explorar projetos",
+        label: "Ver projetos",
         href: "#projetos",
         variant: "primary"
       },
       {
-        label: "Ver jornada",
+        label: "Ler jornada",
         href: "#jornada",
         variant: "secondary"
       }
@@ -38,7 +38,7 @@ const portfolioConfig = {
       },
       {
         label: "Enviar WhatsApp",
-        href: "https://wa.me/5511966143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto",
+        href: "https://wa.me/5511966143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade",
         variant: "primary",
         external: true
       },
@@ -57,238 +57,257 @@ const portfolioConfig = {
   },
   metrics: [
     {
-      value: "4+",
-      label: "anos de experiência prática"
+      value: "2020",
+      label: "início da atuação profissional em interface e UX/UI"
     },
     {
-      value: "50+",
-      label: "projetos entregues"
+      value: "20+",
+      label: "repositórios públicos no GitHub"
     },
     {
-      value: "15+",
-      label: "repositórios public"
+      value: "7",
+      label: "projetos selecionados nesta vitrine"
     },
     {
-      value: "95%",
-      label: "lighthouse performance"
+      value: "2",
+      label: "formações que moldam visão técnica e estrutural"
     }
   ],
   timeline: [
     {
-      meta: "2022-2023",
-      title: "Arquitetura Web Fundamentals",
+      meta: "2015 - 2020",
+      title: "Base analítica em Engenharia Civil",
       description:
-        "Domínio de HTML5 semântico, CSS moderno e JavaScript ES6+, com foco em padrões de design responsivo e otimização de performance."
+        "Formação na Unimetrocamp que fortaleceu organização, raciocínio estrutural, leitura de problema e responsabilidade na tomada de decisão."
     },
     {
-      meta: "2023-2024",
-      title: "Componentização & React",
+      meta: "2020 - 2022",
+      title: "Front-End e UX/UI na 5.2.0 Brasil LTDA",
       description:
-        "Desenvolvimento de sistemas de componentes reutilizáveis, state management e integração com APIs RESTful em projetos escaláveis."
+        "Atuação profissional com interfaces, experiência do usuário e comunicação visual, consolidando prática em front-end e desenho de solução digital."
     },
     {
-      meta: "2024-2025",
-      title: "TypeScript & Product Thinking",
+      meta: "2024 - 2025",
+      title: "WorkFlow Engenharia & Arquitetura",
       description:
-        "Implementação de type safety completo, análise de métricas de negócio e otimização de experiência do usuário para conversão."
+        "Experiência como sócio diretor de engenharia e calculista estrutural, trazendo visão de negócio, responsabilidade técnica e leitura mais madura de contexto."
     },
     {
-      meta: "2025-Atual",
-      title: "Especialização & Liderança Técnica",
+      meta: "Atual",
+      title: "Engenharia de Software e trilha front-end moderna",
       description:
-        "Arquitetura de aplicações enterprise, mentoria de equipes, implementação de CI/CD e boas práticas de desenvolvimento em produção."
+        "Aprofundamento em React, Next.js, Angular, TypeScript, APIs e UI responsiva, com evolução visível em projetos públicos, assessments e estudos aplicados."
     }
   ],
   projects: [
     {
-      status: "Web Application",
+      status: "Assessment técnico",
+      title: "Desafio Front-End Attus",
+      description:
+        "Aplicação Angular desenvolvida para avaliação técnica, com listagem, busca reativa, paginação, formulários tipados e estados de loading, vazio e erro bem definidos.",
+      detail:
+        "Projeto forte para mostrar arquitetura, TypeScript, Signals, Angular Material, RxJS e testes com Vitest.",
+      tags: ["Angular", "TypeScript", "RxJS", "Vitest"],
+      href: "https://github.com/abilioferraz/Projeto_08_DesafioVaga",
+      featured: true
+    },
+    {
+      status: "Portfólio autoral",
       title: "my-portifolio-geek",
       description:
-        "Portfólio profissional com design moderno e identidade visual única. Demonstra expertise em arquitetura frontend e otimização de performance.",
-      tags: ["JavaScript", "Responsive", "Portfolio"],
-      href: "https://github.com/abilioferraz/my-portifolio-geek"
+        "Portfólio pessoal com identidade geek, renderização dinâmica de conteúdo e foco em apresentar repertório técnico sem cair em layout genérico.",
+      detail:
+        "Combina HTML, CSS e JavaScript puro com narrativa visual, acessibilidade e organização de conteúdo.",
+      tags: ["Vanilla JS", "UI Design", "Responsive"],
+      href: "https://github.com/abilioferraz/my-portifolio-geek",
+      liveUrl: "https://my-portifolio-geek.vercel.app"
     },
     {
-      status: "Projeto",
-      title: "Projeto_04_pet",
-      description:
-        "Aplicação para gerenciamento de pets com interface intuitiva e funcionalidades robustas. Exemplifica padrões de desenvolvimento moderno.",
-      tags: ["HTML5", "CSS3", "JavaScript"],
-      href: "https://github.com/abilioferraz/Projeto_04_pet"
-    },
-    {
-      status: "Landing Page",
+      status: "Landing page",
       title: "Projeto_03_portifolionexo",
       description:
-        "Página responsiva com foco em design semântico e acessibilidade. Demonstra domínio de CSS avançado e componentização visual.",
-      tags: ["HTML", "CSS3", "Responsive"],
-      href: "https://github.com/abilioferraz/Projeto_03_portifolionexo"
+        "Landing page com acabamento profissional para presença digital de cliente, criada com foco em clareza de mensagem, posicionamento e conversão.",
+      detail:
+        "Bom exemplo de hierarquia visual, organização semântica e construção de interface comercial objetiva.",
+      tags: ["HTML", "CSS3", "UX Writing"],
+      href: "https://github.com/abilioferraz/Projeto_03_portifolionexo",
+      liveUrl: "https://projeto-03-portifolionexo.vercel.app"
     },
     {
-      status: "Web Application",
-      title: "AluraBook SiteResponsivo",
+      status: "Negócio local",
+      title: "Projeto_04_pet",
       description:
-        "Site responsivo com layout dinâmico e navegação intuitiva. Implementação completa de boas práticas de desenvolvimento web.",
-      tags: ["HTML5", "CSS3", "JavaScript"],
-      href: "https://github.com/abilioferraz/AluraBook__SiteResponsivo"
+        "Landing page para hotel pet com comunicação acolhedora, distribuição de serviços e foco em confiança para conversão de contato.",
+      detail:
+        "Mostra aplicação de branding, visual temático e organização de uma jornada simples para serviço local.",
+      tags: ["Landing Page", "Branding", "Responsive"],
+      href: "https://github.com/abilioferraz/Projeto_04_pet",
+      liveUrl: "https://projeto-04-pet.vercel.app"
     },
     {
-      status: "Landing Page",
-      title: "Projeto_01_aluraplus",
+      status: "App em evolução",
+      title: "cliniflow",
       description:
-        "Landing page para streaming com design elegante e UX otimizada. Demonstra entendimento de padrões de conversão e copywriting.",
-      tags: ["HTML5", "CSS3", "Design"],
-      href: "https://github.com/abilioferraz/Projeto_01_aluraplus"
+        "Base recente com Next.js 16, React 19, Tailwind 4 e framer-motion, apontando evolução de stack e repertório em aplicações mais modernas.",
+      detail:
+        "Entra no portfólio como sinal de amadurecimento técnico e continuidade prática no ecossistema React.",
+      tags: ["Next.js", "React 19", "Tailwind 4"],
+      href: "https://github.com/abilioferraz/cliniflow"
     },
     {
-      status: "Interactive Game",
+      status: "UI responsiva",
+      title: "AluraBook Site Responsivo",
+      description:
+        "Projeto focado em layout responsivo, leitura de catálogo e refinamento visual para múltiplos breakpoints.",
+      detail:
+        "Ajuda a demonstrar consistência de interface e domínio de CSS em montagem de páginas orientadas a conteúdo.",
+      tags: ["HTML", "CSS", "Responsive"],
+      href: "https://github.com/abilioferraz/AluraBook__SiteResponsivo",
+      liveUrl: "https://alura-book-site-responsivo.vercel.app"
+    },
+    {
+      status: "Interatividade",
       title: "DETONA RALPH",
       description:
-        "Jogo web interativo com lógica complexa e feedback visual em tempo real. Exemplifica manipulação avançada de DOM e game mechanics.",
-      tags: ["JavaScript", "HTML5", "Game"],
+        "Projeto voltado a lógica de interface, feedback visual e manipulação de DOM em tempo real dentro de uma proposta lúdica.",
+      detail:
+        "Entra como evidência de JavaScript prático, composição de estados e construção de experiência interativa.",
+      tags: ["JavaScript", "DOM", "Game UI"],
       href: "https://github.com/abilioferraz/DETONA-RALPH"
-    },
-    {
-      status: "Code Challenge",
-      title: "Jogo Memória",
-      description:
-        "Jogo de memória com CSS animations avançadas e lógica de game state. Demonstra profundidade em programação e design interativo.",
-      tags: ["CSS3", "JavaScript", "Game"],
-      href: "https://github.com/abilioferraz/jogo-memoria"
-    },
-    {
-      status: "Logic Challenge",
-      title: "Desafio Lógica",
-      description:
-        "Desafio de programação resolvido com JavaScript puro. Exemplifica problem-solving e otimização de algoritmos.",
-      tags: ["JavaScript", "Algoritmos", "Logic"],
-      href: "https://github.com/abilioferraz/desafio-logica"
-    },
-    {
-      status: "Open Source",
-      title: "DIO Lab Open Source",
-      description:
-        "Contribuição em projeto colaborativo open source. Demonstra experiência com versionamento Git e colaboração profissional.",
-      tags: ["Git", "GitHub", "Colaboração"],
-      href: "https://github.com/abilioferraz/dio-lab-open-source"
-    },
-    {
-      status: "Learning",
-      title: "Trilha CSS Desafio 01",
-      description:
-        "Desafio de CSS da trilha DIO com foco em semântica e responsividade. Prova de conceitos fundamentais bem consolidados.",
-      tags: ["CSS3", "Responsivo", "Design"],
-      href: "https://github.com/abilioferraz/trilha-css-desafio-01"
     }
   ],
   stack: [
     {
-      level: "Core",
-      title: "HTML5 Semântico",
-      description: "Estruturação acessível e SEO-friendly com semântica correta para máxima compatibilidade e inclusão."
+      level: "Front-End",
+      title: "React.js",
+      description: "Componentização, organização de interface e evolução para aplicações mais estruturadas."
+    },
+    {
+      level: "Framework",
+      title: "Next.js",
+      description: "Base moderna para aplicações React com foco em estrutura de produto e experiência mais completa."
+    },
+    {
+      level: "Framework",
+      title: "Angular",
+      description: "Evidência recente de arquitetura, tipagem forte e construção mais orientada a avaliação técnica."
     },
     {
       level: "Core",
-      title: "CSS Moderno",
-      description: "Grid, Flexbox, CSS Variables e componentes visuais com foco em manutenibilidade e performance de renderização."
+      title: "TypeScript",
+      description: "Tipagem para previsibilidade, manutenção e melhor leitura de código em projetos mais densos."
     },
     {
       level: "Core",
       title: "JavaScript ES6+",
-      description: "Lógica robusta, manipulação segura de DOM e padrões modernos com foco em escalabilidade e debugging."
+      description: "Base para lógica, interações, consumo de dados e manipulação segura de interface no navegador."
     },
     {
-      level: "Advanced",
-      title: "TypeScript",
-      description: "Type safety completo para reduzir bugs em produção e melhorar experiência de desenvolvimento em equipe."
+      level: "Core",
+      title: "HTML5 + CSS3",
+      description: "Semântica, layout responsivo, hierarquia visual e refinamento de interface em páginas reais."
     },
     {
-      level: "Framework",
-      title: "React",
-      description: "Componentização avançada, hooks, context API e padrões para aplicações enterprise com lógica complexa."
+      level: "UX",
+      title: "UX/UI Designer",
+      description: "Olhar voltado para clareza, navegação, equilíbrio visual e redução de fricção na experiência."
     },
     {
-      level: "DevOps",
-      title: "Git & Versionamento",
-      description: "Fluxos profissionais com branches, squash commits, CI/CD e rastreabilidade completa de mudanças."
+      level: "Extra",
+      title: "SEO e APIs",
+      description: "Base em estrutura amigável para busca, consumo de dados e integração com requisições de serviço."
     }
   ],
   quests: [
     {
       tag: "Agora",
-      title: "Projetos orientados a métricas de negócio",
+      title: "Consolidar ecossistema React com repertório de produto",
       description:
-        "Desenvolvimento com foco em objetivos mensuráveis: conversão, engajamento, performance e satisfação do usuário."
+        "Expandir projetos com Next.js, React e TypeScript para sair do estudo isolado e ganhar densidade de solução."
     },
     {
-      tag: "Próximo",
-      title: "Consolidação de arquitetura em escala",
+      tag: "Próxima frente",
+      title: "Transformar estudos em cases mais completos",
       description:
-        "Implementação de padrões avançados em React/TypeScript para equipes maiores, com ênfase em manutenibilidade de longo prazo."
+        "Evoluir projetos com contexto, problema, decisão técnica e resultado, deixando o portfólio mais convincente para mercado."
     },
     {
       tag: "Contínuo",
-      title: "Educação técnica e mentorias",
+      title: "Aprofundar arquitetura, UX e comunicação técnica",
       description:
-        "Compartilhamento de conhecimento, documentação de processos e contribuição para a comunidade de desenvolvimento."
+        "Refinar código, interface e apresentação para que o nível visual acompanhe o amadurecimento técnico."
     }
   ],
   valueProps: [
     {
-      tag: "Visão",
-      title: "Interfaces estratégicas",
+      tag: "Estrutura",
+      title: "Leitura de problema antes do layout",
       description:
-        "Design visual que comunica valor de marca, orienta o usuário e gera confiança desde o primeiro contato."
+        "A base em engenharia reforça organização, lógica e responsabilidade no jeito de pensar solução."
+    },
+    {
+      tag: "UX/UI",
+      title: "Interface com direção visual e usabilidade",
+      description:
+        "O foco não é só deixar bonito, mas guiar o usuário com clareza, ritmo e consistência."
     },
     {
       tag: "Código",
-      title: "Arquitetura production-ready",
+      title: "Base limpa para evoluir",
       description:
-        "Estrutura escalável, bem documentada e pronta para evoluir com novas features sem comprometer performance ou manutenibilidade."
+        "Prefiro estruturas simples, legíveis e sustentáveis, em vez de enfeitar o projeto com complexidade desnecessária."
     },
     {
-      tag: "Entrega",
-      title: "Comunicação estratégica com stakeholders",
+      tag: "Mercado",
+      title: "Portfólio com prova pública de evolução",
       description:
-        "Documentação clara de objetivos, timeline, riscos e resultados para que recrutadores, clientes e colaboradores entendam valor real."
+        "Repositórios, deploys e assessments ajudam a mostrar crescimento contínuo de forma verificável."
     }
   ],
   contacts: [
     {
       tag: "GitHub",
       title: "Portfólio público de código",
-      description: "Projetos, contribuições open source e histórico de desenvolvimento com padrão profissional."
+      description: "Projetos, contribuições open source e histórico de desenvolvimento com padrão profissional.",
+      href: "https://github.com/abilioferraz",
+      linkLabel: "Ver repositórios"
     },
     {
-      tag: "Localização",
-      title: "São Paulo e formato remoto",
-      description: "Disponível para colaboração em projetos locais, híbridos ou totalmente remotos com time distribuído."
+      tag: "LinkedIn",
+      title: "Perfil profissional",
+      description: "Experiência, trajetória e contexto profissional organizados para networking e oportunidades.",
+      href: "https://www.linkedin.com/in/abilio-ferraz-235895216/",
+      linkLabel: "Abrir perfil"
     },
     {
-      tag: "Disponibilidade",
-      title: "Aberto a oportunidades estratégicas",
-      description: "Buscando projetos complexos que desafiem meus limites técnicos e ofereçam crescimento profissional real."
+      tag: "E-mail",
+      title: "Contato direto",
+      description: "Canal rápido para propostas, convites de processo seletivo e conversas sobre projeto.",
+      href: "mailto:a.juniorferraz@gmail.com",
+      linkLabel: "Enviar e-mail"
+    },
+    {
+      tag: "WhatsApp",
+      title: "Resposta rápida",
+      description: "Opção prática para iniciar contato sobre freelance, parceria ou oportunidade front-end.",
+      href: "https://wa.me/5511966143537?text=Ol%C3%A1%20Abilio%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade",
+      linkLabel: "Chamar no WhatsApp"
     }
   ]
 };
 
 function createElement(tagName, className, text) {
-  try {
-    const element = document.createElement(tagName);
+  const element = document.createElement(tagName);
 
-    if (className) {
-      element.className = className;
-    }
-
-    if (text) {
-      element.textContent = text;
-    }
-
-    return element;
-  } catch (error) {
-    console.error(`Error creating element: ${tagName}`, error);
-    return null;
+  if (className) {
+    element.className = className;
   }
+
+  if (typeof text === "string") {
+    element.textContent = text;
+  }
+
+  return element;
 }
 
 function setText(selector, value) {
@@ -321,82 +340,96 @@ function createTagList(tags) {
   return list;
 }
 
+function createProjectLinks(project) {
+  const links = createElement("div", "project-card__links");
+  const repositoryLink = createElement("a", "project-link", "Repositório");
+
+  repositoryLink.href = project.href;
+  repositoryLink.target = "_blank";
+  repositoryLink.rel = "noreferrer";
+  repositoryLink.setAttribute("aria-label", `Abrir repositório do projeto ${project.title}`);
+
+  links.append(repositoryLink);
+
+  if (project.liveUrl) {
+    const liveLink = createElement("a", "project-link", "Deploy");
+    liveLink.href = project.liveUrl;
+    liveLink.target = "_blank";
+    liveLink.rel = "noreferrer";
+    liveLink.setAttribute("aria-label", `Abrir deploy do projeto ${project.title}`);
+    links.append(liveLink);
+  }
+
+  return links;
+}
+
 function renderHero() {
-  try {
-    const { profile, metrics, actions } = portfolioConfig;
-    const title = document.querySelector("#hero-title");
-    const summary = document.querySelector("#hero-summary");
-    const avatar = document.querySelector("#profile-avatar");
-    const heroActions = document.querySelector("#hero-actions");
-    const heroMetrics = document.querySelector("#hero-metrics");
-    const statusTags = document.querySelector("#status-tags");
-    const highlightList = document.querySelector("#highlight-list");
+  const { profile, metrics, actions } = portfolioConfig;
+  const title = document.querySelector("#hero-title");
+  const summary = document.querySelector("#hero-summary");
+  const avatar = document.querySelector("#profile-avatar");
+  const heroActions = document.querySelector("#hero-actions");
+  const heroMetrics = document.querySelector("#hero-metrics");
+  const statusTags = document.querySelector("#status-tags");
+  const highlightList = document.querySelector("#highlight-list");
 
-    if (!profile) {
-      console.warn("Profile config not found");
-      return;
-    }
+  if (title) {
+    title.textContent = profile.title;
+  }
 
-    if (title) {
-      title.textContent = profile.title;
-    }
+  if (summary) {
+    summary.textContent = profile.summary;
+  }
 
-    if (summary) {
-      summary.textContent = profile.summary;
-    }
+  if (avatar) {
+    avatar.src = profile.avatarUrl;
+  }
 
-    if (avatar && profile.avatarUrl) {
-      avatar.src = profile.avatarUrl;
-    }
+  setText("#profile-name", profile.name);
+  setText("#profile-role", profile.role);
+  setText("#profile-location", profile.location);
+  setText("#profile-availability", profile.availability);
+  setText("#profile-focus", profile.focus);
 
-    setText("#profile-name", profile.name);
-    setText("#profile-role", profile.role);
-    setText("#profile-location", profile.location);
-    setText("#profile-availability", profile.availability);
-    setText("#profile-focus", profile.focus);
+  if (heroActions) {
+    const fragment = document.createDocumentFragment();
+    actions.hero.forEach((action) => fragment.append(createActionButton(action)));
+    heroActions.replaceChildren(fragment);
+  }
 
-    if (heroActions && actions && actions.hero) {
-      const fragment = document.createDocumentFragment();
-      actions.hero.forEach((action) => fragment.append(createActionButton(action)));
-      heroActions.replaceChildren(fragment);
-    }
+  if (heroMetrics) {
+    const fragment = document.createDocumentFragment();
 
-    if (heroMetrics && metrics) {
-      const fragment = document.createDocumentFragment();
+    metrics.forEach((metric) => {
+      const item = createElement("li");
+      const value = createElement("strong", "", metric.value);
+      const label = createElement("span", "", metric.label);
 
-      metrics.forEach((metric) => {
-        const item = createElement("li");
-        const value = createElement("strong", "", metric.value);
-        const label = createElement("span", "", metric.label);
+      item.append(value, label);
+      fragment.append(item);
+    });
 
-        item.append(value, label);
-        fragment.append(item);
-      });
+    heroMetrics.replaceChildren(fragment);
+  }
 
-      heroMetrics.replaceChildren(fragment);
-    }
+  if (statusTags) {
+    const fragment = document.createDocumentFragment();
 
-    if (statusTags && profile.statusTags) {
-      const fragment = document.createDocumentFragment();
+    profile.statusTags.forEach((tag) => {
+      fragment.append(createElement("li", "", tag));
+    });
 
-      profile.statusTags.forEach((tag) => {
-        fragment.append(createElement("li", "", tag));
-      });
+    statusTags.replaceChildren(fragment);
+  }
 
-      statusTags.replaceChildren(fragment);
-    }
+  if (highlightList) {
+    const fragment = document.createDocumentFragment();
 
-    if (highlightList && profile.highlights) {
-      const fragment = document.createDocumentFragment();
+    profile.highlights.forEach((highlight) => {
+      fragment.append(createElement("li", "", highlight));
+    });
 
-      profile.highlights.forEach((highlight) => {
-        fragment.append(createElement("li", "", highlight));
-      });
-
-      highlightList.replaceChildren(fragment);
-    }
-  } catch (error) {
-    console.error("Error rendering hero section:", error);
+    highlightList.replaceChildren(fragment);
   }
 }
 
@@ -425,132 +458,40 @@ function renderTimeline() {
 }
 
 function renderProjects() {
-  try {
-    const wrapper = document.querySelector(".project-grid")?.parentElement;
-    const container = document.querySelector("#project-grid");
+  const container = document.querySelector("#project-grid");
 
-    if (!container) {
-      return;
+  if (!container) {
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  portfolioConfig.projects.forEach((project) => {
+    const classes = ["project-card"];
+
+    if (project.featured) {
+      classes.push("project-card--featured");
     }
 
-    const fragment = document.createDocumentFragment();
+    const article = createElement("article", classes.join(" "));
+    article.setAttribute("data-reveal", "");
 
-    portfolioConfig.projects.forEach((project) => {
-      const article = createElement("article", "project-card");
-      article.setAttribute("data-reveal", "");
+    const top = createElement("div", "project-card__top");
+    const headingWrap = createElement("div", "project-card__heading");
+    const status = createElement("span", "project-card__status", project.status);
+    const title = createElement("h3", "", project.title);
+    const description = createElement("p", "", project.description);
+    const detail = createElement("p", "project-card__detail", project.detail);
+    const footer = createElement("div", "project-card__footer");
 
-      const top = createElement("div", "project-card__top");
-      const headingWrap = createElement("div");
-      const status = createElement("span", "project-card__status", project.status);
-      const title = createElement("h3", "", project.title);
-      const description = createElement("p", "", project.description);
-      const footer = createElement("div", "project-card__footer");
-      const link = createElement("a", "project-link", "Ver repositório");
-
-      headingWrap.append(status, title);
-      link.href = project.href;
-      link.target = "_blank";
-      link.rel = "noreferrer";
-      link.setAttribute("aria-label", `Abrir repositório do projeto ${project.title}`);
-
-      footer.append(createTagList(project.tags), link);
-      top.append(headingWrap);
-      article.append(top, description, footer);
-      fragment.append(article);
-    });
-
-    container.replaceChildren(fragment);
-    
-    // Setup carrossel após renderizar cards
-    setupProjectCarousel();
-  } catch (error) {
-    console.error("Error rendering projects:", error);
-  }
-}
-
-function setupProjectCarousel() {
-  try {
-    const carousel = document.querySelector("#project-grid");
-    if (!carousel) return;
-
-    // Criar wrapper se não existir
-    let wrapper = carousel.parentElement;
-    if (!wrapper || !wrapper.classList.contains("carousel-wrapper")) {
-      wrapper = document.createElement("div");
-      wrapper.className = "carousel-wrapper";
-      carousel.parentElement.insertBefore(wrapper, carousel);
-      
-      // Criar container
-      const container = document.createElement("div");
-      container.className = "carousel-container";
-      wrapper.appendChild(container);
-      container.appendChild(carousel);
-
-      // Criar botões
-      const btnPrev = document.createElement("button");
-      btnPrev.className = "carousel-button carousel-prev";
-      btnPrev.setAttribute("aria-label", "Projetos anteriores");
-      btnPrev.innerHTML = "←";
-      
-      const btnNext = document.createElement("button");
-      btnNext.className = "carousel-button carousel-next";
-      btnNext.setAttribute("aria-label", "Próximos projetos");
-      btnNext.innerHTML = "→";
-
-      wrapper.insertBefore(btnPrev, container);
-      wrapper.appendChild(btnNext);
-
-      // Event listeners
-      btnPrev.addEventListener("click", () => scrollCarousel("prev"));
-      btnNext.addEventListener("click", () => scrollCarousel("next"));
-      carousel.addEventListener("scroll", updateCarouselButtons);
-    }
-
-    updateCarouselButtons();
-  } catch (error) {
-    console.error("Error setting up carousel:", error);
-  }
-}
-
-function scrollCarousel(direction) {
-  const carousel = document.querySelector("#project-grid");
-  if (!carousel) return;
-
-  const scrollAmount = carousel.clientWidth;
-  const totalScrollWidth = carousel.scrollWidth;
-  const containerWidth = carousel.clientWidth;
-  const maxScroll = totalScrollWidth - containerWidth;
-
-  let targetScroll = direction === "next" 
-    ? carousel.scrollLeft + scrollAmount 
-    : carousel.scrollLeft - scrollAmount;
-
-  // Loop infinito: voltar ao início ao chegar no final
-  if (targetScroll >= maxScroll) {
-    targetScroll = 0;
-  } else if (targetScroll < 0) {
-    targetScroll = maxScroll;
-  }
-
-  carousel.scrollTo({
-    left: targetScroll,
-    behavior: "smooth"
+    headingWrap.append(status, title);
+    top.append(headingWrap);
+    footer.append(createTagList(project.tags), createProjectLinks(project));
+    article.append(top, description, detail, footer);
+    fragment.append(article);
   });
-}
 
-function updateCarouselButtons() {
-  const carousel = document.querySelector("#project-grid");
-  const btnPrev = document.querySelector(".carousel-prev");
-  const btnNext = document.querySelector(".carousel-next");
-
-  if (!carousel || !btnPrev || !btnNext) return;
-
-  // Verificar posição para desabilitar botões
-  const atStart = carousel.scrollLeft <= 0;
-  const atEnd = carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 10);
-
-  btnPrev.disabled = atStart;
-  btnNext.disabled = atEnd;
+  container.replaceChildren(fragment);
 }
 
 function renderStack() {
@@ -634,6 +575,8 @@ function renderContacts() {
 
     portfolioConfig.contacts.forEach((item) => {
       const article = createElement("article", "contact-card");
+      article.setAttribute("data-reveal", "");
+
       const tag = createElement("span", "contact-card__tag", item.tag);
       const title = createElement("h3", "", item.title);
       const description = createElement("p", "", item.description);
@@ -644,8 +587,12 @@ function renderContacts() {
         const footer = createElement("div", "contact-card__footer");
         const link = createElement("a", "contact-link", item.linkLabel || "Abrir");
         link.href = item.href;
-        link.target = "_blank";
-        link.rel = "noreferrer";
+
+        if (item.href.startsWith("http")) {
+          link.target = "_blank";
+          link.rel = "noreferrer";
+        }
+
         footer.append(link);
         article.append(footer);
       }
@@ -683,7 +630,7 @@ function setupReveal() {
     },
     {
       threshold: 0.15,
-      rootMargin: "0px 0px -32px 0px"
+      rootMargin: "0px 0px -40px 0px"
     }
   );
 
@@ -741,20 +688,16 @@ function setupMobileMenu() {
 }
 
 function initializePortfolio() {
-  try {
-    renderHero();
-    renderTimeline();
-    renderProjects();
-    renderStack();
-    renderQuestLog();
-    renderValueProps();
-    renderContacts();
-    setCurrentYear();
-    setupMobileMenu();
-    setupReveal();
-  } catch (error) {
-    console.error("Portfolio initialization error:", error);
-  }
+  renderHero();
+  renderTimeline();
+  renderProjects();
+  renderStack();
+  renderQuestLog();
+  renderValueProps();
+  renderContacts();
+  setCurrentYear();
+  setupMobileMenu();
+  setupReveal();
 }
 
 document.addEventListener("DOMContentLoaded", initializePortfolio);
